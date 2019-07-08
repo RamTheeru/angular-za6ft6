@@ -7,7 +7,7 @@ import{AppRoutingModule} from './app-routing/app-routing.module';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements ngInit  {
-  
+ 
  ngOnInit(){
 
  }

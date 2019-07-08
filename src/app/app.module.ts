@@ -8,10 +8,11 @@ import { HeroesComponent } from './heroes/heroes.component';
 import{Hero} from './hero';
 import {HEROES}from './mock-heroes';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent,applyMyStyle, HeroesComponent, HeroDetailComponent ],
+  declarations: [ AppComponent, HelloComponent,applyMyStyle, HeroesComponent, HeroDetailComponent, HeaderComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
