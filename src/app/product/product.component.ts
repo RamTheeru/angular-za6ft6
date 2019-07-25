@@ -16,7 +16,7 @@ products =[];
   }
   onDel(n : number){
     this.products.splice(n,1);
-
+  this.product='';
   }
   onAdd(){
     this.products.push(this.product);
