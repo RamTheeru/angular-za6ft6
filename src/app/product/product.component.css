@@ -7,3 +7,28 @@ border-bottom: opx;
 margin-top: 20px;
 font-family: sans-serif;
 }
+h1{
+  text-align:center;
+  background-color: #5c8297;
+  padding: 30px 0px;
+  margin-top: 0px;
+  color: white;
+
+}
+
+addItem{
+  padding-bottom: 0px;
+  position: relative;
+  height: 30px;
+}
+addText{
+  width: 80%;
+  height: 30px;
+  padding: 5px;
+  font-size: 20px;
+}
+.addItem button{
+  height: 45px;
+  width : 50px;
+  padding: 5px;
+}
