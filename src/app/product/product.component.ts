@@ -20,6 +20,7 @@ products =[];
   }
   onAdd(){
     this.products.push(this.product);
+     this.product='';
   }
 
 }
