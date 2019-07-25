@@ -1,10 +1,10 @@
 <div class="main">
   <h1>Item's List</h1>
   <div class="addItem">
-    <input type="text" class="addText" placeholder="add item">
-    <button>Add</button>
+    <input type="text" [(ngModel)]="product" class="addText"  placeholder="add item">
+    <button (click)="onAdd()">Add</button>
   </div>
   <ul>
-    <li>abc<span>X</span></li>
+    <li *ngFor="let p of products; let i=index" >{{p}}<span #ele (click)="onDel(i)">X</span></li>
   </ul>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ElementRef,ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
+product : string;
+@ViewChild('ele') pro : ElementRef;
+products =[];
   constructor() { }
 
   ngOnInit() {
+
+  }
+  onDel(n : number){
+    this.products.splice(n,1);
+
+  }
+  onAdd(){
+    this.products.push(this.product);
   }
 
 }
